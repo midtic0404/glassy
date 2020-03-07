@@ -1,5 +1,5 @@
 <script>
-	let ingredients = ['Vodka', 'Tequila', 'Rum', 'Jin', 'Tripple Sec']
+	let ingredients = ['Vodka', 'Tequila', 'Rum', 'Gin', 'Scotch']
 </script>
 
 <style>
