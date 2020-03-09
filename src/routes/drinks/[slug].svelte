@@ -6,6 +6,7 @@
 
 <script>
 	import { onMount } from 'svelte';
+	import  DrinkCard  from '../../components/DrinkCard.svelte';
 
 	export let ingredientName;
 	let drinks = [];
@@ -33,13 +34,22 @@
 		align-items: center;
 		height: 80vh;
 	}
+
+	.drink-list {
+		margin-top: 30px;
+	}
 </style>
 
 <div class="main">
     <h1 class="is-size-3">{ingredientName}</h1>
-	<ul>
-		{#each drinks as drink}
-			 <li>{drink.strDrink}</li>
-		{/each}
-	</ul>
+	<div class="drink-list">
+		<div class="columns is-multiline">
+				{#each drinks as drink}
+					<DrinkCard
+						name="{drink.strDrink}"
+						imageUrl="{drink.strDrinkThumb}"
+					/>
+				{/each}
+		</div>
+	</div>
 </div>

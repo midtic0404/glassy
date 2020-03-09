@@ -12,11 +12,6 @@
       <a class="navbar-item" href="">
         Home
       </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
-
     </div>
   </div>
 </nav>
