@@ -45,10 +45,10 @@
 	<div class="drink-list">
 		<div class="columns is-multiline">
 				{#each drinks as drink}
-					<DrinkCard
-						name="{drink.strDrink}"
-						imageUrl="{drink.strDrinkThumb}"
-					/>
+						<DrinkCard
+							name="{drink.strDrink}"
+							imageUrl="{drink.strDrinkThumb}"
+						/>
 				{/each}
 		</div>
 	</div>
